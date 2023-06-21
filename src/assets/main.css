@@ -1,0 +1,121 @@
+@import './base.css';
+
+#app {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+
+  }
+
+  #app {
+
+  }
+}
+
+.page {
+  background-image: linear-gradient(black, #0c799e);
+  /* padding: 20px 10px 20px 10px; */
+  padding: 20px;
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+  transition: 50ms;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+ul li {
+  padding: 10px 0;
+  line-height: 1.5em;
+}
+
+section {
+  /* padding: 20px 10px; */
+  padding: 20px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.background-logo {
+  background-color: var(--background-logo--opacity);
+  border-radius: 1px;
+  padding: 2px;
+}
+
+.big-logo {
+  height: 60px !important;
+}
+
+.bigger-logo {
+  height: 70px !important;
+}
+
+.light {
+  background-color: var(--background-card-light);
+  color: var(--color-card-dark);
+}
+
+.dark {
+  background-color: var(--background-card-dark);
+  color: var(--color-card-light);
+}
+
+.headband--dark {
+  background: var(--background-headband-dark);
+  color: var(--color-card-light);
+}
+
+.link--dark {
+  color: var(--color-dark);
+}
+
+.back.dark strong  {
+  color:rgb(43, 161, 179);
+}
+
+/* SECTIONS style général */
+section,
+.background--main {
+  background-image: linear-gradient(black, #0c799e);
+}
+
+.section_title {
+  color: var(--color-light);
+  padding: 50px 0;
+  text-align: center;
+  font-family: 'lemonchi', cursive;
+}
+
+.section_content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
