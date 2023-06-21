@@ -13,9 +13,4 @@ const app = createApp(App)
 app.use(router)
 app.use(pinia)
 
-// import { useProjectsStore } from '/src/assets/stores/ProjectsStore.js'
-
-// const projectsStore = useProjectsStore()
-// console.log(projectsStore)
-
 app.mount('#app')
