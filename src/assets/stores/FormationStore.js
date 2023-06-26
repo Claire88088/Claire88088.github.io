@@ -118,7 +118,7 @@ export const useFormationStore = defineStore("FormationStore", {
                     id: 'ingenieur',
                     year: '2004',
                     title: 'Diplôme d\'Ingénieur',
-                    subtitle: 'Traitement de Eaux et des Nuisances',
+                    subtitle: 'Traitement des Eaux et des Nuisances',
                     logo: {
                         src: ensipLogo,
                         alt: 'logo ESIP',

@@ -476,7 +476,7 @@ export const useProjectsStore = defineStore("ProjectsStore", {
                         "Mettre en oeuvre une architecture MVC",
                         "Programmer en orienté objet",
                         "Créer une base de données MySQL",
-                        "Utiliser Bootstrap et et Sass pour la mise en forme responsive",
+                        "Utiliser Bootstrap et Sass pour la mise en forme responsive",
                         "Utiliser JavaScript et jQuery pour valider les formulaires côté client, aider à la saisie de mots de passe forts, créer une petite animation sur les logos",
                         "Intégrer la météo via l'API MeteoConcept",
                         "Sécuriser l'application (failles XSS et injections SQL)"
