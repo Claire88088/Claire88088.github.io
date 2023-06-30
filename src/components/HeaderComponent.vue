@@ -63,7 +63,7 @@ export default {
                     <a v-if="$route.name === 'home'" v-for="item in navItems" :href="item.href">{{ item.title }}</a>
                 </div>
                 <div>
-                    <a href="../src/assets/CVClaireBouton.pdf" target="_blank">CV</a>
+                    <a href="CVClaireBouton.pdf" target="_blank">CV</a>
                     <a href="https://www.linkedin.com/in/claire-bouton-dev-web/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/Claire88088" target="_blank"><i class="fab fa-github"></i></a>
                 </div>

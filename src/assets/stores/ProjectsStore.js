@@ -95,9 +95,6 @@ import wordpressLogo from '@/assets/images/logos/word_press_white_logo.png'
 import piniaLogo from '@/assets/images/logos/pinia_logo.svg'
 import sassLogo from '@/assets/images/logos/sass_logo.png'
 
-let basePath = window.location.origin
-let websiteUrl = basePath + '/projet_velos'
-
 
 export const useProjectsStore = defineStore("ProjectsStore", {
     state: () => (
@@ -675,7 +672,7 @@ export const useProjectsStore = defineStore("ProjectsStore", {
                     ],
                     links: {
                         github: "https://github.com/Claire88088/projetcarte",
-                        // website: "https://claire88088.github.io/projet_velos",
+                        website: "../projet_velos/index.html",
                     },
                     goal: 'Créer une "Single Page Application" simulant la réservation de vélos dans une ville à partir du mockup de la page',
                     context: 'Projet n°3 de formation de développeur web',
@@ -788,7 +785,7 @@ export const useProjectsStore = defineStore("ProjectsStore", {
                     ],
                     links: {
                         github: "https://github.com/Claire88088/projet_integration",
-                        // website: "https://claire88088.github.io/projet_integration",
+                        website: "../projet_integration/index.html",
                     },
                     goal: 'Créer un site vitrine (1 page avec 4 sections) à partir d\'une maquette au format jpg',
                     description: "L'objectif de ce projet étant la mise en oeuvre des connaissances en HTML et CSS, le site est volontairement non fonctionnel (pas de JavaScript)",
