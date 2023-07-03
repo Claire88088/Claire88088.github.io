@@ -1,5 +1,13 @@
 import { defineStore } from "pinia"
 
+import jeu_accueil from '@/assets/images/projets/jeu2048/visuel.png'
+import jeu_debut from '@/assets/images/projets/jeu2048/debut.png'
+import jeu_deplacement1 from '@/assets/images/projets/jeu2048/deplacementDroite.png'
+import jeu_deplacement2 from '@/assets/images/projets/jeu2048/deplacementBas.png'
+import jeu_deplacement3 from '@/assets/images/projets/jeu2048/deplacementGauche.png'
+import jeu_deplacement4 from '@/assets/images/projets/jeu2048/deplacementHaut.png'
+import jeu_fin from '@/assets/images/projets/jeu2048/fin.png'
+
 import hero from '@/assets/images/projets/portfolio/hero.png'
 import flip_card from '@/assets/images/projets/portfolio/flip_card.png'
 import carousel from '@/assets/images/projets/portfolio/carousel.png'
@@ -100,6 +108,79 @@ export const useProjectsStore = defineStore("ProjectsStore", {
     state: () => (
         {
             projects: [
+                {
+                    id: 'projet_jeu',
+                    year: "2022/2023",
+                    isMain: true,
+                    title: 'Jeu 2048',
+                    image: jeu_accueil,
+                    technos: [
+                        {
+                            src: html5Logo,
+                            alt: 'logo HTML5'
+                        },
+                        {
+                            src: css3Logo,
+                            alt: 'logo CSS3',
+                            isBackground: false
+                        },
+                        {
+                            src: jsLogo,
+                            alt: 'logo JavaScript'
+                        },
+                    ],
+                    links: {
+                        github: "https://github.com/Claire88088/jeu2048",
+                        website: "../projet_jeu/index.html",
+                    },
+                    goal: 'Recoder le jeu 2048',
+                    description: "Principe : on fait se déplacer les pions sur la grille de jeu afin qu'ils fusionnent. Leur valeur augmente au fur-et-à-mesure des fusions. But du jeu : atteindre la valeur maximale : 2048",
+                    context: "Projet personnel",
+                    features: [
+                        "Affichage de la grille de jeu et des pions avec le module CSS Grid Layout",
+                        "Affichage d'un nouveau pion avec une valeur aléatoire de \"2\" ou \"4\"",
+                        "Dépacement des pions",
+                        "Fusion des pions",
+                        "Gestion de la fin du jeu",
+                    ],
+                    skills: [
+                        "Programmer en Orienté Objet en JavaScript",
+                        "Mettre en oeuvre les principes du livre \"Coder proprement\" de Robert C. Martin",
+                        "Utiliser la méthode de développement : \"Test Driven Development\""
+                    ],
+                    portfolio: [
+                        { 
+                            id: '1',
+                            image: jeu_debut,
+                            legend: "Début du jeu"
+                        },
+                        { 
+                            id: '2',
+                            image: jeu_deplacement1,
+                            legend: "Déplacement vers la droite"
+                        },
+                        { 
+                            id: '3',
+                            image: jeu_deplacement2,
+                            legend: "Fusion de 2 pions"
+                        },
+                        { 
+                            id: '4',
+                            image: jeu_deplacement3,
+                            legend: "Déplacement vers la gauche"
+                        },
+                        { 
+                            id: '5',
+                            image: jeu_deplacement4,
+                            legend: "Déplacement vers le haut"
+                        },
+                        { 
+                            id: '6',
+                            image: jeu_fin,
+                            legend: "Fin du jeu"
+                        },
+                    ]
+                },
                 {
                     id: 'projet_portfolio',
                     year: "2022/2023",
