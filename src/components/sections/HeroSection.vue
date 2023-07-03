@@ -29,7 +29,6 @@
 
 #headband {
     background:rgba(9, 29, 43, 0.5);
-    /* margin-top: 20%; */
     position: relative;
     top: 20%;
 }
@@ -77,7 +76,6 @@ h1 {
 /* définition des animations */
 @keyframes appear {
     0% {
-        /* color: #002354; */
         transform: scale(0);  
     }
 
@@ -94,7 +92,6 @@ h1 {
 
 @keyframes appear-contact {
     0% {
-        /* color: #002354; */
         transform: scale(0);  
     }
 
@@ -109,14 +106,12 @@ h1 {
     }
 
     100% {
-        /* color: #2ba1b3; */
         transform: scale(1);
     }
 }
 
 @keyframes bigger {
     0% {
-        /* color: #002354; */
     }
 
     25% {
@@ -140,12 +135,9 @@ h1 {
 
 
 /** animations du hero**/
-/* #b, #i, #e, #n, #v, #e-2, #n-2, #u, #e-3  */
 #c, #l, #a, #i, #r, #e, #b, #o, #u, #t, #o-2, #n, #contact-btn, #contact-btn_content
-/* #c, #o, #n, #t, #a, #c, #t-2, #e, #z, #tiret, #m, #o-2, #i, #excl-point */
 { 
     display: inline-block;
-    /* font-size: 150%; */
 }
 
 #c
@@ -154,76 +146,62 @@ h1 {
 }
 
 #l 
-/* #o */
 {
     animation: appear 1s 150ms forwards;
 }
 
 #a
-/* #n */
 {
     animation: appear 1s 300ms forwards;
 }
 
 #i
-/* #t */
 {
     animation: appear 1s 450ms forwards;
 }
 
 #r
-/* #a */
 {
     animation: appear 1s 600ms forwards;
 }
 
 #e
-/* #c-2 */
 {
     animation: appear 1s 750ms forwards;
 }
 
 #b
-/* #t-2 */
 {
     animation: appear 1s 900ms forwards;
 }
 
 #o
-/* #e */
 {
     animation: appear 1s 1050ms forwards;
 }
 
 #u
-/* #z */
 {
     animation: appear 1s 1200ms forwards;
 }
 
 #t
-/* #tiret */
 {
     animation: appear 1s 1350ms forwards;
 }
 
 #o-2
-/* #m */
 {
     animation: appear 1s 1500ms forwards;
 }
 
 #n
-/* #o-2 */
 {
     animation: appear 1s 1650ms forwards;
 }
 
 #contact-btn
-/* #i */
 {
-    /* animation: appear 1s 1800ms alternate-reverse 2; */
     animation: appear-contact 2s 1800ms forwards;
-    /* animation: bigger 1s 1800ms forwards; */
 }
 </style>
