@@ -139,7 +139,7 @@ export const useProjectsStore = defineStore("ProjectsStore", {
                     features: [
                         "Affichage de la grille de jeu et des pions avec le module CSS Grid Layout",
                         "Affichage d'un nouveau pion avec une valeur aléatoire de \"2\" ou \"4\"",
-                        "Dépacement des pions",
+                        "Déplacement des pions",
                         "Fusion des pions",
                         "Gestion de la fin du jeu",
                     ],
