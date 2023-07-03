@@ -19,12 +19,8 @@
   --color-light: rgb(169, 197, 202);
 
   --background-card-dark: rgba(12, 121, 158, 0.5);
-  /* --background-card-dark: #0c799e80; */
-  /* --background-card-dark: #0c799e; */
 
   --background-card-light: rgba(169, 197, 202, 0.8);
-  /* --background-card-light: #a9c5cacc; */
-  /* --background-card-light: #a9c5ca; */
 
   --color-card-dark: rgb(9, 29, 43);
   --color-card-light: rgb(239, 244, 245);
@@ -38,23 +34,10 @@
   --background-dark: rgba(12, 121, 158, 0.5);
   --background-light: rgba(169, 197, 202, 0.8);
 
-  /* --main-marge: 80px; */
   --main-marge: 50px;
-  /* --main-marge: 2%; */
   --marge: 15px;
   --min-marge: 10px;
 }
-
-/* semantic color variables for this project */
-/* :root {
-
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-
-  }
-} */
 
 @font-face {
   font-family: 'lemonchi';
