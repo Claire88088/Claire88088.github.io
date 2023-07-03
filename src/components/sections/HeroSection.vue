@@ -140,68 +140,69 @@ h1 {
     display: inline-block;
 }
 
-#c
-{
-    animation: appear 2s forwards;
+#c, #l, #a, #i, #r, #e, #b, #o, #u, #t, #o-2, #n {
+    animation: appear 3s forwards;
+    animation-iteration-count: infinite;
 }
+
 
 #l 
 {
-    animation: appear 1s 150ms forwards;
+    animation-delay: 150ms;
 }
 
 #a
 {
-    animation: appear 1s 300ms forwards;
+    animation-delay: 300ms;
 }
 
 #i
 {
-    animation: appear 1s 450ms forwards;
+    animation-delay: 450ms;
 }
 
 #r
 {
-    animation: appear 1s 600ms forwards;
+    animation-delay: 600ms;
 }
 
 #e
 {
-    animation: appear 1s 750ms forwards;
+    animation-delay: 750ms;
 }
 
 #b
 {
-    animation: appear 1s 900ms forwards;
+    animation-delay: 900ms;
 }
 
 #o
 {
-    animation: appear 1s 1050ms forwards;
+    animation-delay: 1050ms;
 }
 
 #u
 {
-    animation: appear 1s 1200ms forwards;
+    animation-delay: 1200ms;
 }
 
 #t
 {
-    animation: appear 1s 1350ms forwards;
+    animation-delay: 1350ms;
 }
 
 #o-2
 {
-    animation: appear 1s 1500ms forwards;
+    animation-delay: 1500ms;
 }
 
 #n
 {
-    animation: appear 1s 1650ms forwards;
+    animation-delay: 1650ms;
 }
 
 #contact-btn
 {
-    animation: appear-contact 2s 1800ms forwards;
+    animation: appear-contact 2s 3s forwards;
 }
 </style>
