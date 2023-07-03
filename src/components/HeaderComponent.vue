@@ -1,30 +1,10 @@
 <script>
 import { RouterLink } from 'vue-router'
 
+import InternalNav from './nav/InternalNav.vue'
+import ExternalNav from './nav/ExternalNav.vue'
+
 export default {
-    data() {
-        return {
-            navItems: [
-                { 
-                    title: 'Expérience',
-                    href: '#experience-section',
-                },
-                { 
-                    title: 'Projets',
-                    href: '#projets-section',
-                }, 
-                { 
-                    title: 'Technologies',
-                    href: '#technos-section',
-                },
-                { 
-                    title: 'Formation',
-                    href: '#formation-section',
-                },
-                
-            ],
-        }
-    },
     computed: {
         barsIconElt() {
             return document.getElementById('bars-icon')
@@ -48,6 +28,9 @@ export default {
         goToPrevPage() {
             history.back()
         }
+    },
+    components: {
+        InternalNav, ExternalNav
     }
 }
 
@@ -58,27 +41,19 @@ export default {
         <div id="navigation">
             <nav id="main-nav">
                 <div>
-                    <a v-if="$route.name === 'image' || $route.name === 'project'" href="#" @click="goToPrevPage"><i class="fas fa-arrow-left"></i></a> 
-                    <RouterLink to="/" v-if="$route.name !== 'home'"><i class="fas fa-home"></i></RouterLink>
-                    <a v-if="$route.name === 'home'" v-for="item in navItems" :href="item.href">{{ item.title }}</a>
+                   <InternalNav></InternalNav>
                 </div>
                 <div>
-                    <a href="CVClaireBouton.pdf" target="_blank">CV</a>
-                    <a href="https://www.linkedin.com/in/claire-bouton-dev-web/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Claire88088" target="_blank"><i class="fab fa-github"></i></a>
+                    <ExternalNav></ExternalNav>
                 </div>
             </nav>
 
             <div id="navigation--responsive">
                 <i id="bars-icon" class="fa fa-solid fa-bars" @click="showNavbar"></i>
                 <nav id="main-nav--responsive">
-                    <a v-if="$route.name === 'image' || $route.name === 'project'" href="#" @click="goToPrevPage"><i class="fas fa-arrow-left"></i></a> 
-                    <RouterLink to="/" v-if="$route.name !== 'home'"><i class="fas fa-home"></i></RouterLink>
-                    <a v-if="$route.name === 'home'" v-for="item in navItems" :href="item.href">{{ item.title }}</a>
+                    <InternalNav></InternalNav>
                     
-                    <a href="../src/assets/CVClaireBouton.pdf" target="_blank">CV</a>
-                    <a href="https://www.linkedin.com/in/claire-bouton-dev-web/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Claire88088" target="_blank"><i class="fab fa-github"></i></a>
+                    <ExternalNav></ExternalNav>
                 </nav>
             </div>
         </div>
@@ -95,13 +70,6 @@ export default {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-#main-nav a {
-    color: var(--light);
-    font-size: 1.2em;
-    padding: 0 20px;
-    font-weight: 100;
 }
 
 #navigation--responsive {
