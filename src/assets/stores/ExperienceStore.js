@@ -49,13 +49,13 @@ export const useExperienceStore = defineStore("ExperienceStore", {
                         // context: "Interface Front Office du logiciel de Digital Asset Management édité par Einden et le Front Office sur mesure",
                         missions: [
                             {
-                                description: "Configurer le modèle d'interface Front Office pour répondre aux exigences d'une 10aine de clients",
+                                description: 'Développer des fonctionnalités (HTML/CSS, JS et PHP natifs)',
                             },
                             {
                                 description: 'Résoudre des tickets de debug (HTML/CSS, JS et PHP natifs)',
                             },
                             {
-                                description: 'Développer des fonctionnalités (HTML/CSS, JS et PHP natifs)',
+                                description: "Configurer le modèle d'interface Front Office pour répondre aux exigences d'une 10aine de clients",
                             },
                             {
                                 description: 'Mettre en place le responsive et améliorer le style sur un projet de CMS personnalisé pour un client',
